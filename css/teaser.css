@@ -1,0 +1,36 @@
+@import url(variables.css);
+
+/* Stil für den Teaser-Bereich */
+.teaser {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Mindesthöhe auf Vollbildhöhe setzen */
+    background-image: url(../images/forest.jpg); /* Hintergrundbild für den Teaser-Bereich */
+    background-size: cover; /* Bild skalieren, um den gesamten Bereich zu bedecken */
+    background-position: center; /* Bild im Bereich zentrieren */
+    border-radius: 0.625em; /* Randradius für den Teaser-Bereich */
+    border: 0.125em solid #ccc; /* Rand für den Teaser-Bereich */
+}
+
+.teaser-content{
+    margin-top: var(--navbar-height);
+}
+
+/* Stil für den Teaser-Text */
+.teaser-text {
+    max-width: 750px;
+    background-color: rgba(240, 240, 240, 0.2); /* Halbtransparente Hintergrundfarbe */
+    backdrop-filter: blur(10px); /* Unschärfeeffekt für moderne Browser */
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px; /* Abstand anpassen */
+    box-sizing: border-box;
+    word-break: break-all;
+    border-radius: 0.625em;
+    border: 0.125em solid none;
+}
+
+.teaser p{
+    margin: 1em 0;
+}

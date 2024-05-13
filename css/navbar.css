@@ -1,0 +1,85 @@
+@import url(variables.css);
+nav{
+    background-color: var( --navbar-background-color);
+    box-shadow:  0px 3px 5px rgba(0,0,0,0.5); /* Kräftigerer und dunklerer Schatten */
+    position: fixed;
+    top: 0; /* Platzierung am oberen Rand des Viewports */
+    left: 0; /* Platzierung am linken Rand des Viewports */
+    width: 100%; /* Füllt die gesamte Breite des Viewports */
+    z-index: 1000;
+}
+
+.nav-placeholder{
+    height: var(--navbar-height);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: var(--navbar-height);
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+}
+
+nav a:hover{
+    background-color: var(--navbar-hover-color);
+    font-weight: var(--navbar-hover-font-weight);
+
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 250px;
+    z-index: 999;
+    background-color: var(--sidebar-background-color);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Korrigierter Wert für box-shadow */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--sidebar-background-color); /* Mindestgröße, variable Größe basierend auf Viewport-Breite, maximale Größe */
+    word-break: break-all;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        word-break: break-word; /* Hier wird word-break angewendet */
+    }
+}
+
+@media (max-width: 210px) {
+    .hideOnToBig{
+        display: none;
+    }
+}

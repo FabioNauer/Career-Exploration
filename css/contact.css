@@ -1,0 +1,66 @@
+@import url(variables.css);
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    word-wrap: break-word; /* Zeilenumbruch bei Bedarf */
+}
+.wrapper-content {
+    padding-top: var(--navbar-height);
+}
+
+.contact-section {
+    max-width: 600px;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 0.625em;
+    border: 0.125em solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-section h2 {
+    margin-bottom: 1em;
+    color: #333;
+    border-bottom: 0.125em solid #ccc;
+    padding-bottom: 0.625em;
+    word-wrap: break-all; /* Zeilenumbruch bei Bedarf */
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 0.625em;
+    color: #555;
+    word-wrap: break-all; /* Zeilenumbruch bei Bedarf */
+}
+
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 0.625em;
+    margin-bottom: 1em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    box-sizing: border-box;
+    resize: vertical;
+    word-wrap: break-all; /* Zeilenumbruch bei Bedarf */
+}
+
+.contact-section button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.625em 1.25em;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-all; /* Zeilenumbruch bei Bedarf */
+}

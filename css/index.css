@@ -1,0 +1,7 @@
+/* Dein weiterer CSS-Code hier */
+@import url(variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}

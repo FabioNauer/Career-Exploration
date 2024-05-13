@@ -1,0 +1,22 @@
+:root {
+    --font-color:#000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    --teaser-background-color: white;
+    --navbar-background-color: white;
+    --navbar-hover-color: #f0f0f0;
+    --navbar-hover-font-weight:bold;
+    --navbar-height: 50px;
+
+    --sidebar-background-color:rgba(255, 254, 252, 0.312);
+    --sidebar-font-size:clamp(0.0001rem, 1vw, 1rem);
+    
+
+    --OrganicChemist-font-size:1.125rem;
+    --OrganicChemist-background-font-color: #707070;
+    --OrganicChemist-h1-font-color:#212614;
+    --OrganicChemist-h2-font-size:1.5rem;
+    --OrganicChemist-col-bg-background-color:#212614;
+    --OrganicChemist-col-bg-font-color:White;
+}
